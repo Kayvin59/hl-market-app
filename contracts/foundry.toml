@@ -2,6 +2,11 @@
 src = "src"
 out = "out"
 libs = ["lib"]
+remappings = [
+    "@openzeppelin=lib/openzeppelin-contracts",
+    "@chainlink=lib/chainlink-brownie-contracts/contracts/src/v0.8/shared",
+    "forge-std=lib/forge-std/src"
+]
 
 [rpc_endpoints]
 hyperliquid_testnet = "https://rpc.hyperliquid-testnet.xyz/evm"
